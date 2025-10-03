@@ -1,0 +1,53 @@
+// ===================================
+// _mixins.sass
+// ===================================
+
+// -----------------------------------
+// 響應式斷點變數
+// -----------------------------------
+$mobile: 480px
+$tablet: 768px
+$desktop: 1024px
+$large: 1280px
+
+// -----------------------------------
+// 響應式 Mixins
+// -----------------------------------
+
+// Mobile (< 480px)
+@mixin mobile
+  // 預設樣式，無需媒體查詢
+
+// 平板版本 (≥ 768px)
+@mixin tablet
+  @media (min-width: $tablet)
+    @content
+
+// 桌面版本 (≥ 1024px)
+@mixin desktop
+  @media (min-width: $desktop)
+    @content
+
+// 大桌面版本 (≥ 1280px)
+@mixin large-desktop
+  @media (min-width: $large)
+    @content
+
+// -----------------------------------
+// 範圍查詢 Mixins
+// -----------------------------------
+
+// 僅平板 (768px - 1023px)
+@mixin tablet-only
+  @media (min-width: $tablet) and (max-width: #{$desktop - 1px})
+    @content
+
+// 手機+平板 (< 1024px)
+@mixin mobile-tablet
+  @media (max-width: #{$desktop - 1px})
+    @content
+
+// 小於平板 (< 768px)
+@mixin mobile-only
+  @media (max-width: #{$tablet - 1px})
+    @content
