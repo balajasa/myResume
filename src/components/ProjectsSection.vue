@@ -43,51 +43,107 @@ interface ProjectItem {
 }
 
 const projects: ProjectItem[] = [
+
   {
-    title: 'CSS Animation',
-    colorClass: 'bg-gradient-orange',
-    tag: 'Angular',
-    description: '',
-    techs: ['Angular', 'CSS3', 'TypeScript'],
-    image: 'src/assets/img/project/whatsnextstop.jpg',
-    demoUrl: 'https://example.com/demo1'
-  },
-  {
-    title: 'CSS Animation2',
-    colorClass: 'bg-gradient-blue',
-    tag: 'Angular',
-    description: '',
-    techs: ['Angular', 'SCSS', 'Animation'],
-    image: '',
-    demoUrl: 'https://example.com/demo2'
-  },
-  {
-    title: 'CocosGame Project',
+    title: 'Cocos Creator 遊戲專案',
     colorClass: 'bg-gradient-purple',
-    tag: 'COCOS',
-    description: '',
-    techs: ['Cocos Creator', 'JavaScript', 'Game Dev'],
+    tag: 'Game',
+    description: '使用 Cocos Creator 開發的 2D 遊戲，包含物理引擎與精靈動畫系統',
+    techs: ['Cocos Creator', 'TypeScript', 'Game Dev'],
     image: '',
-    demoUrl: 'https://example.com/demo3'
+    demoUrl: '#'
   },
   {
-    title: `What's Next Stop`,
+    title: 'Angular 遊戲客端網頁',
     colorClass: 'bg-gradient-teal',
-    tag: 'VUE',
-    description: '',
-    techs: ['Vue 3', 'TypeScript', 'API'],
+    tag: 'Angular',
+    description: '線上遊戲平台前端介面，提供流暢的遊戲體驗與即時互動功能',
+    techs: ['Angular', 'SASS', 'TypeScript'],
     image: '',
+    demoUrl: '#'
+  },
+  {
+    title: 'Angular 遊戲平台後台',
+    colorClass: 'bg-gradient-teal',
+    tag: 'Angular',
+    description: '遊戲平台管理系統，整合控管系統的監控介面',
+    techs: ['Angular', 'Angular Material', 'TypeScript'],
+    image: '',
+    demoUrl: '#'
+  },
+  {
+    title: 'Canvas 賽車遊戲',
+    colorClass: 'bg-gradient-teal',
+    tag: 'Canvas',
+    description: '使用原生 Canvas API 打造的賽車遊戲，實現碰撞偵測與流暢動畫效果',
+    techs: ['Canvas API', 'TypeScript', 'SASS'],
+    image: '',
+    demoUrl: '#'
+  },
+  {
+    title: 'CSS Animation 展示',
+    colorClass: 'bg-gradient-purple',
+    tag: 'CSS',
+    description: '純 CSS 動畫效果集合，展示各種進階動畫技巧與互動效果',
+    techs: ['CSS3', 'SASS', 'Animation'],
+    image: '',
+    demoUrl: '#'
+  },
+  {
+    title: `What's Next Stop 旅遊紀錄網站`,
+    colorClass: 'bg-gradient-orange',
+    tag: 'Vue',
+    description: '全功能旅遊規劃平台，整合互動地圖、行程管理、拍照隨機顯示貓咪、今晚吃什麼？等趣味小遊戲',
+    techs: ['Vue 3', 'Pinia', 'TypeScript', 'Firebase', 'Google Analytics 4'],
+    image: 'src/assets/img/project/whatsnextstop.jpg',
     demoUrl: 'https://balajasa.github.io/whatsnextstop/'
   },
   {
-    title: 'Gengar Dashboard',
-    colorClass: 'bg-gradient-orange',
-    tag: 'VUE',
-    description: '',
-    techs: ['Vue 3', 'Chart.js', 'Dashboard'],
+    title: 'Smeargle - 旅遊元件庫',
+    colorClass: 'bg-gradient-purple',
+    tag: 'NPM Package',
+    description: '專為旅遊紀錄網站打造的 Vue 3 元件庫，提供世界旅遊地圖、行程規劃等元件',
+    techs: ['Vue 3', 'TypeScript', 'Leaflet'],
     image: '',
-    demoUrl: 'https://example.com/demo5'
+    demoUrl: '#'
   },
+  {
+    title: '旅遊紀錄網站 - 後台管理系統',
+    colorClass: 'bg-gradient-blue',
+    tag: 'Vue',
+    description: '使用 Firebase 建立的後台管理系統，實現即時資料同步與身份驗證機制',
+    techs: ['Vue 3', 'Firebase', 'TypeScript'],
+    image: '',
+    demoUrl: 'https://balajasasa.gitlab.io/gengar/'
+  },
+  {
+    title: 'komala - 商務管理系統',
+    colorClass: 'bg-gradient-blue',
+    tag: 'Vue',
+    description: '簡易商務管理系統，提供報價單、請款單編寫功能，並支援 PDF 匯出，簡易進銷存管理及客戶管理',
+    techs: ['Vue 3', 'TypeScript', 'Firebase', 'HTML2PDF'],
+    image: '',
+    demoUrl: 'https://komala-c3f862.gitlab.io/'
+  },
+  {
+    title: '艾爾加科技 企業形象網站',
+    colorClass: 'bg-gradient-orange',
+    tag: 'Angular',
+    description: 'RWD 響應式企業官網，採用現代化設計語言與流暢的使用者體驗',
+    techs: ['Angular', 'SASS', 'TypeScript', 'RWD'],
+    image: '',
+    demoUrl: '#'
+  },
+  {
+    title: '熊嗨娛樂城 iOS App',
+    colorClass: 'bg-gradient-blue',
+    tag: 'iOS',
+    description: '原生 iOS 應用開發，提供流暢的使用者體驗與完整的娛樂平台功能',
+    techs: ['Swift', 'UIKit', 'iOS'],
+    image: '',
+    demoUrl: '#'
+  },
+
 ];
 </script>
 

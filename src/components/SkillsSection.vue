@@ -48,7 +48,7 @@ const skills: SkillCategory[] = [
     title: 'Dev Tools',
     icon: '🛠️',
     colorClass: 'bg-gradient-yellow',
-    items: ['Git / GitHub', 'Angular CLI/ Vite / Webpack', 'Cypress']
+    items: ['Git / GitHub', 'Angular CLI/ Vite / Webpack', 'Cypress', 'Google Analytics 4']
   },
   {
     title: 'Collaboration & Design',

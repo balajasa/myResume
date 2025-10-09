@@ -25,7 +25,7 @@ interface ExperienceItem {
 }
 
 const experience: ExperienceItem[] = [
-  { year: '2020 - NOW', company: '凡谷興業有限公司', role: '前端工程師', desc: '負責 Vue.js 專案開發與維護，參與產品功能規劃與 UI/UX 優化，提升網站效能與使用者體驗。' },
+  { year: '2020 - ＮＯＷ', company: '凡谷興業有限公司', role: '前端工程師', desc: '負責 Vue.js 專案開發與維護，參與產品功能規劃與 UI/UX 優化，提升網站效能與使用者體驗。' },
   { year: '2019 - 2019', company: '國立清華大學 服務創新與分析研究中心', role: '網頁資訊分析員', desc: '' },
   { year: '2017 - 2019', company: '嘉聯實業股份有限公司', role: '行銷企劃', desc: '' },
   { year: '2015 - 2017', company: '玉美研究股份有限公司', role: '電子商務企劃', desc: '' },
