@@ -32,6 +32,14 @@
 </template>
 
 <script setup lang="ts">
+import imgCocos from '@/assets/img/project/cocos.jpg'
+import imgWhatsnextstop from '@/assets/img/project/whatsnextstop.jpg'
+import imgSmeargle from '@/assets/img/project/smeargle.jpg'
+import imgGengar from '@/assets/img/project/gengar.jpg'
+import imgKomala from '@/assets/img/project/komala.jpg'
+import imgAgle from '@/assets/img/project/agle.jpg'
+import imgTjabc from '@/assets/img/project/tjabc.jpg'
+
 interface ProjectItem {
   title: string;
   colorClass: string;
@@ -49,7 +57,7 @@ const projects: ProjectItem[] = [
     tag: 'Game',
     description: '使用 Cocos Creator 開發遊戲',
     techs: ['Cocos Creator', 'TypeScript'],
-    image: 'src/assets/img/project/cocos.jpg',
+    image: imgCocos,
     demoUrl: '#'
   },
   {
@@ -76,7 +84,7 @@ const projects: ProjectItem[] = [
     tag: 'Vue',
     description: '紀錄我的旅遊網站，並有整合互動地圖、行程管理，且旅行中的趣味小遊戲',
     techs: ['Vue 3', 'Pinia', 'TypeScript', 'Firebase'],
-    image: 'src/assets/img/project/whatsnextstop.jpg',
+    image: imgWhatsnextstop,
     demoUrl: 'https://balajasa.github.io/whatsnextstop/'
   },
   {
@@ -85,7 +93,7 @@ const projects: ProjectItem[] = [
     tag: 'Vue Library',
     description: '專為旅遊紀錄網站打造的 Vue 3 元件庫，提供世界旅遊地圖、行程規劃等元件',
     techs: ['Vue 3', 'TypeScript', 'Leaflet'],
-    image: 'src/assets/img/project/smeargle.jpg',
+    image: imgSmeargle,
     demoUrl: '#'
   },
   {
@@ -94,7 +102,7 @@ const projects: ProjectItem[] = [
     tag: 'Vue',
     description: '使用 Firebase 建立的後台管理系統，實現即時資料同步與身份驗證機制',
     techs: ['Vue 3', 'Firebase', 'TypeScript'],
-    image: 'src/assets/img/project/gengar.jpg',
+    image: imgGengar,
     demoUrl: 'https://balajasasa.gitlab.io/gengar/'
   },
   {
@@ -103,7 +111,7 @@ const projects: ProjectItem[] = [
     tag: 'Vue',
     description: '簡易商務管理系統，提供報價單、請款單編寫功能，並支援 PDF 匯出，簡易 CMS 管理系統',
     techs: ['Vue 3', 'TypeScript', 'Firebase', 'HTML2PDF'],
-    image: 'src/assets/img/project/komala.jpg',
+    image: imgKomala,
     demoUrl: 'https://komala-c3f862.gitlab.io/'
   },
   {
@@ -112,7 +120,7 @@ const projects: ProjectItem[] = [
     tag: 'Angular',
     description: 'RWD 響應式企業官網，採用現代化設計語言與流暢的使用者體驗',
     techs: ['Angular', 'SASS', 'TypeScript', 'RWD'],
-    image: 'src/assets/img/project/agle.jpg',
+    image: imgAgle,
     demoUrl: 'https://balajasa.github.io/agle/'
   },
   {
@@ -121,7 +129,7 @@ const projects: ProjectItem[] = [
     tag: 'Event Site',
     description: '台日電商交流研討會官方活動網站，呈現議程、講者介紹與活動資訊，並支援多裝置瀏覽。',
     techs: ['HTML', 'CSS', 'JavaScript', 'RWD'],
-    image: 'src/assets/img/project/tjabc.jpg',
+    image: imgTjabc,
     demoUrl: 'https://balajasa.github.io/tjabc_2022/'
   }
 ];
