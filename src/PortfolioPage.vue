@@ -34,7 +34,8 @@
 
     <!-- Footer -->
     <footer class="footer">
-      © 2025 Liberes.
+      <p>© 2025 Liberes.</p>
+      <p class="footer-sub">Thanks for stopping by.</p>
     </footer>
   </div>
 </template>
@@ -119,13 +120,19 @@ onMounted(() => {
   position: relative
   z-index: 10
   max-width: 1152px
-  margin: 0 auto
+  margin: 4rem auto 0
   padding: 2rem
-  margin-top: 4rem
   text-align: center
   font-size: 0.875rem
   border-top: 1px solid $color-border
   color: $color-text-secondary
+  display: flex
+  flex-direction: column
+  gap: 0.25rem
+
+.footer-sub
+  font-size: 0.8rem
+  opacity: 0.6
 
 @keyframes pulse
   0%, 100%

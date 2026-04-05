@@ -1,11 +1,11 @@
 <template>
   <div class="hero-section">
     <h1 class="hero-title">
-      Hi,<br />
+      Hi, I'm Liberes<br />
       A Developer.
     </h1>
     <p class="hero-description">
-      熱愛創造有趣的數位體驗，從網頁到遊戲都難不倒我。
+      熱愛創造有趣的數位體驗，從網頁到遊戲都難不倒我
     </p>
   </div>
 </template>
@@ -16,23 +16,31 @@
 .hero-section
   position: relative
   z-index: 10
-  max-width: 1152px
   margin: 0 auto
-  padding: 2rem 2rem 5rem
+  padding: 3rem 1.25rem
+  max-width: 1152px
   text-align: center
 
+  @media (min-width: 768px)
+    padding: 4rem 2rem
+
 .hero-title
-  font-size: 4.5rem
+  margin-bottom: 1.5rem
   font-weight: 900
+  font-size: 3.5rem
   line-height: 1
-  margin-bottom: 2rem
 
   @media (min-width: 768px)
-    font-size: 8rem
+    margin-bottom: 2rem
+    font-size: 5.5rem
 
 .hero-description
-  font-size: 1.125rem
-  max-width: 42rem
   margin: 0 auto
+  max-width: 42rem
   color: $color-text-secondary
+  font-size: 1rem
+
+  @media (min-width: 768px)
+    font-size: 1.125rem
+
 </style>

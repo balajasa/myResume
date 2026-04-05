@@ -35,25 +35,25 @@ const skills: SkillCategory[] = [
   {
     title: 'Frontend',
     icon: '🎨',
-    colorClass: 'bg-gradient-blue',
+    colorClass: 'bg-gradient-navy',
     items: ['Angular', 'Vue', 'TypeScript', 'SASS / Tailwind CSS', 'Responsive Design']
   },
   {
     title: 'Game Dev',
     icon: '🎮',
-    colorClass: 'bg-gradient-purple',
-    items: ['Cocos Creator (5+ Games)', 'CSS Animation (10+ Games)', 'Canvas API']
+    colorClass: 'bg-gradient-brown',
+    items: ['Cocos Creator (8+ Games)', 'CSS Animation (10+ Games)', 'Canvas']
   },
   {
     title: 'Dev Tools',
     icon: '🛠️',
-    colorClass: 'bg-gradient-yellow',
+    colorClass: 'bg-gradient-caramel',
     items: ['Git / GitHub', 'Angular CLI/ Vite / Webpack', 'Cypress', 'Google Analytics 4']
   },
   {
     title: 'Collaboration & Design',
     icon: '👥',
-    colorClass: 'bg-gradient-green',
+    colorClass: 'bg-gradient-olive',
     items: ['Agile / Scrum', 'Jira', 'Figma']
   }
 ];
@@ -65,21 +65,25 @@ const skills: SkillCategory[] = [
 .skills-section
   position: relative
   z-index: 10
-  max-width: 1152px
   margin: 0 auto
-  padding: 4rem 2rem
+  padding: 3rem 1.25rem
+  max-width: 1152px
+
+  @media (min-width: 768px)
+    padding: 4rem 2rem
 
 .section-title
-  font-size: 3rem
-  font-weight: 900
   margin-bottom: 3rem
   text-align: center
+  font-weight: 900
+  font-size: 2rem
 
   @media (min-width: 768px)
     font-size: 3.75rem
 
 .skills-grid
   display: grid
+
   grid-template-columns: 1fr
   gap: 1.5rem
 
@@ -87,56 +91,58 @@ const skills: SkillCategory[] = [
     grid-template-columns: repeat(2, 1fr)
 
 .skill-card
-  background-color: white
-  border-radius: 1.5rem
-  padding: 2rem
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)
   display: flex
   align-items: flex-start
-  gap: 1.5rem
+  padding: 2rem
+  border-radius: 1.5rem
+  background-color: white
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)
   transition: box-shadow 0.3s ease
+
+  gap: 1.5rem
 
   &:hover
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25)
 
 .skill-icon
+  display: flex
+  align-items: center
+  flex-shrink: 0
+  justify-content: center
   width: 4rem
   height: 4rem
   border-radius: 50%
-  display: flex
-  align-items: center
-  justify-content: center
   font-size: 1.5rem
-  flex-shrink: 0
 
 .skill-content
   flex: 1
 
 .skill-title
-  font-size: 1.5rem
-  font-weight: 700
   margin-bottom: 0.75rem
   color: $color-text-primary
+  font-weight: 700
+  font-size: 1.5rem
 
 .skill-items
   display: flex
   flex-direction: column
+
   gap: 0.375rem
 
 .skill-item
-  font-size: 0.875rem
   color: $color-text-secondary
+  font-size: 0.875rem
 
-// Gradient classes
-.bg-gradient-blue
-  background: $gradient-blue
+// Icon background classes
+.bg-gradient-navy
+  background: rgba($gradient-navy, 0.5)
 
-.bg-gradient-purple
-  background: $gradient-purple
+.bg-gradient-brown
+  background: rgba($gradient-brown, 0.5)
 
-.bg-gradient-green
-  background: $gradient-green
+.bg-gradient-olive
+  background: rgba($gradient-olive, 0.5)
 
-.bg-gradient-yellow
-  background: $gradient-yellow
+.bg-gradient-caramel
+  background: rgba($gradient-caramel, 0.5)
 </style>

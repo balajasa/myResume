@@ -18,34 +18,39 @@
 .contact-section
   position: relative
   z-index: 10
-  max-width: 64rem
   margin: 0 auto
-  padding: 4rem 2rem
+  padding: 3rem 1.25rem
+  max-width: 64rem
+
+  @media (min-width: 768px)
+    padding: 4rem 2rem
 
 .section-title
-  font-size: 3rem
-  font-weight: 900
   margin-bottom: 3rem
   text-align: center
+  font-weight: 900
+  font-size: 2rem
 
   @media (min-width: 768px)
     font-size: 3.75rem
 
 .contact-content
-  text-align: center
   display: flex
   flex-direction: column
+  text-align: center
+
   gap: 1rem
 
 .contact-description
-  font-size: 1.125rem
   color: $color-text-secondary
+  font-size: 1.125rem
 
 .contact-links
   display: flex
   justify-content: center
-  gap: 1.5rem
   font-size: 1.125rem
+
+  gap: 1.5rem
 
 .contact-link
   color: $color-text-primary
